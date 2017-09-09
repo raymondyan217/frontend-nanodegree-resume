@@ -11,7 +11,7 @@ h5,
 h6 {
   padding: 0;
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto Slab', serif;
 }
 
 .clear-fix {
@@ -22,6 +22,11 @@ h6 {
 .work-entry,
 .project-entry {
   padding: 0 5%;
+}
+
+.project-entry img {
+  background-color: #440d61;
+  max-width: 160px;
 }
 
 h1 {
@@ -129,7 +134,7 @@ a {
 
 /* TODO: Replace with image later */
 #header {
-  background-color: #484848;
+  background-color: #a3d0b3;
 }
 
 .flex-box {
@@ -212,6 +217,27 @@ span {
   width: 100%;
   padding-bottom: 5%;
 }
+#workExperience,
+#projects,
+#education {
+  padding: 50px 0;
+}
+
+#projects,
+#education {
+  display: flex;
+  flex-wrap: wrap;
+}
+#projects h2,
+#education h2,
+#education h3 {
+  flex: 100%;
+}
+#projects .project-entry,
+#education .education-entry {
+  flex: 1;
+}
+
 
 @media only screen and (min-width: 750px) {
   #skills-h3,
