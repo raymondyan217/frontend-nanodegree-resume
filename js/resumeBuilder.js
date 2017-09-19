@@ -58,8 +58,7 @@ var bio = {
 };
 
 var education = {
-    schools: [
-        {
+    schools: [{
             name: 'City College Of San Francisco',
             location: 'San Francisco, CA',
             degree: 'No degree',
@@ -87,14 +86,12 @@ var education = {
             dates: '2011 - 2012'
         },
     ],
-    onlineCourses: [
-        {
-            title: 'Front End Web Developer Nano Degree',
-            school: 'Udacity',
-            dates: 'In progress',
-            url: 'https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001'
-        }
-    ],
+    onlineCourses: [{
+        title: 'Front End Web Developer Nano Degree',
+        school: 'Udacity',
+        dates: 'In progress',
+        url: 'https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001'
+    }],
     display: function() {
         var educationObj = $('#education');
         education.schools.forEach(function(school) {
@@ -126,15 +123,13 @@ var education = {
 };
 
 var work = {
-    jobs: [
-        {
-            employer: 'YouNoodle',
-            title: 'Quality Assurance Engineer',
-            location: 'San Francisco, CA',
-            dates: 'In progress',
-            description: 'I test our platform and writing automated test scripts and a little bit of front end work.'
-        }
-    ],
+    jobs: [{
+        employer: 'YouNoodle',
+        title: 'Quality Assurance Engineer',
+        location: 'San Francisco, CA',
+        dates: 'In progress',
+        description: 'I test our platform and writing automated test scripts and a little bit of front end work.'
+    }],
     display: function() {
         $('#workExperience').append(HTMLworkStart);
         var workEntry = $('.work-entry');
@@ -153,8 +148,7 @@ var work = {
 };
 
 var projects = {
-    projects: [
-        {
+    projects: [{
             title: 'YouNoodle',
             dates: 'February 2012 - Current',
             description: 'Developed a website for the company I currently work for using Wordpress with customized theme',
